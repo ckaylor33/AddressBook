@@ -31,7 +31,7 @@ namespace AddressBook
             options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddScoped<IImageService, BasicImageService > ();
-
+ 
             services.AddControllersWithViews();
         }
 
